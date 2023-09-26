@@ -22,3 +22,27 @@ body {
 .coming-soon p {
     font-size: 1.5rem;
 }
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
