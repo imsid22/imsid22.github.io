@@ -1,9 +1,12 @@
 // Header.js
 import React from 'react';
+import Switch from 'react-switch';
 
-function Header() {
+// Updated Header.js to include the toggle
+
+function Header({ toggleTheme, darkMode }) {
     return (
-      <header className="bg-gray-800 text-white p-4 sticky top-0 z-50 w-full">
+      <header className={`p-4 sticky top-0 z-50 w-full ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-black'}`}>
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold">
             Siddhant Dube
@@ -19,6 +22,14 @@ function Header() {
             </ul>
           </nav>
         </div>
+        <Switch 
+          onChange={toggleTheme} 
+          checked={darkMode} 
+          onColor="#222" 
+          offColor="#ddd" 
+          checkedIcon={false} 
+          uncheckedIcon={false} 
+        />
       </header>
     );
   }
