@@ -19,8 +19,8 @@ const NavBar = () => {
         <ul className='hidden md:flex'>
             <li className='cursor-pointer hover:scale-105 duration-200'>Home</li>
             <li className='cursor-pointer hover:scale-105 duration-200'>About</li>
-            <li className='cursor-pointer hover:scale-105 duration-200'>Experience</li>
-            <li className='cursor-pointer hover:scale-105 duration-200'>Work</li>
+            <li className='cursor-pointer hover:scale-105 duration-200'>Skills</li>
+            <li className='cursor-pointer hover:scale-105 duration-200'>Projects</li>
             <li className='cursor-pointer hover:scale-105 duration-200'>Contact</li>
         </ul>
 
@@ -35,8 +35,8 @@ const NavBar = () => {
         <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-black flex flex-col justify-center items-center'}>
             <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>Home</li>
             <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>About</li>
-            <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>Experience</li>
-            <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>Work</li>
+            <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>Skills</li>
+            <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>Projects</li>
             <li className='py-6 text-4xl cursor-pointer hover:scale-105 duration-200'>Contact</li>
         </ul>
         
