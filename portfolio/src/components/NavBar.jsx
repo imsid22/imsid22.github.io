@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const NavBar = () => {
 
@@ -40,33 +42,31 @@ const NavBar = () => {
         
         {/* Social Icons */}
 
-        <div className='hidden'> </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        {/* <ul className='hidden md:flex'>
-
-            {linkArr.map(({id, link}) => (
-                <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200'>
-                    {link}
-                </li>
-            ))}
-
+        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'> 
+        <ul>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0A66C2]'>
+                <a className='flex justify-between items-center w-full text-white' href='/'>
+                    LinkedIn <FaLinkedin size={30} />
+                </a>
+            </li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-black'>
+                <a className='flex justify-between items-center w-full text-white' href='/'>
+                    GitHub <FaGithub size={30} />
+                </a>
+            </li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#A9A9A9]'>
+                <a className='flex justify-between items-center w-full text-white' href='/'>
+                    Email <HiOutlineMail size={30} />
+                </a>
+            </li>
+            <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#4CAF50]'>
+                <a className='flex justify-between items-center w-full text-white' href='/'>
+                    Resume <BsFillPersonLinesFill size={30} />
+                </a>
+            </li>
         </ul>
-        <div onClick={() => setNav(!nav)} className='cursor-pointer pr-4 z-10 text-gray-500'>
-            <FaBars size={30} />
-        </div> */}
+        </div>
+        
     </div>
     );
 };
